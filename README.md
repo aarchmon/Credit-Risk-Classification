@@ -1,25 +1,25 @@
 # Credit Risk Classification
 
-![San Francisco](./Images/San_Francisco.jpg)
+![San Francisco](./Images/credit.jpeg)
 
 ---
 
 ## Technologies
 
 
-Before attempting to execute any _Python_ code in `san_francisco_housing.ipynb`, it is imperative that your development environment holds the following modules:
+Before attempting to execute any _Python_ code in `credit_risk_resampling.ipynb`, it is imperative that your development environment holds the following modules:
 
-[os](https://docs.python.org/3/library/os.html) - Miscellaneous operating system interfaces.
+[numpy](https://numpy.org/) - Scientific computing module.
 
 [pandas](https://pandas.pydata.org/pandas-docs/stable/) - Data analysis module.
 
-[plotly](https://plotly.com/python/) - Interactive plotting module.
-
-[hvplot](https://hvplot.holoviz.org/) - High-level plotting API.
-
 [pathlib](https://docs.python.org/3/library/pathlib.html) - Object-oriented filesystem path library.
 
-[dotenv](https://pypi.org/project/python-dotenv/) - _.env_ file parser module.
+[sklearn](https://sklearn.org/) - Machine learning module.
+
+[imblearn](https://pypi.org/project/imblearn/) - Imbalanced machine learning module. 
+
+[warnings](https://docs.python.org/3/library/warnings.html) - System alerts. 
 
 ---
 
@@ -28,25 +28,19 @@ Before attempting to execute any _Python_ code in `san_francisco_housing.ipynb`,
 With your _Python 3.7+_ environment, run the following commands via CLI:
 
 ```
-import os
+import numpy as np
 import pandas as pd
-import plotly.express as px
-import hvplot.pandas
 from pathlib import Path
-from dotenv import load_dotenv
+from sklearn.metrics import balanced_accuracy_score
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
+from imblearn.metrics import classification_report_imbalanced
+import warnings
 ```
 
 ---
 
 ## Examples
-
-![Average Sale and Gross Rent](./Images/avg-sale-px-sq-foot-gross-rent.png)
-
-![Mapbox Plot](./Images/mapbox-plot.png)
-
-![Pricing Information by Neighborhood](./Images/pricing-info-by-neighborhood.png)
-
-![Housing Units by Year](./Images/zoomed-housing-units-by-year.png)
 
 ---
 
@@ -54,9 +48,9 @@ from dotenv import load_dotenv
 
 1. Clone repository onto your personal machine. 
 
-2. Open _Jupyter Lab_ or _Jupyter Notebook_ via _Anaconda Navigator_ and navigate to the directory in which the file `san_francisco_housing.ipynb` is present. _All relevant code for this repository will be executed via Jupyter Notebook and no output will be printed to the command line_. Ensure that all relevant dependencies and _Python_ modules are installed (see __Technologies__ and __Installation Guide__ for more details) before attempting to execute code within _Jupyter Notebook_; otherwise, you will receive multiple interpreter errors! 
+2. Open _Jupyter Lab_ or _Jupyter Notebook_ via _Anaconda Navigator_ and navigate to the directory in which the file `credit_risk_resampling.ipynb` is present. _All relevant code for this repository will be executed via Jupyter Notebook and no output will be printed to the command line_. Ensure that all relevant dependencies and _Python_ modules are installed (see __Technologies__ and __Installation Guide__ for more details) before attempting to execute code within _Jupyter Notebook_; otherwise, you will receive multiple interpreter errors! 
 
-3. With the notebook open, start at the very first cell reading "__Housing Rental Analysis for San Francisco__" (a cell will be active when a rectangular border is surrounding the area in question). Run each cell in sequential order. _It is vital that all cells are ran in sequential order or your notebook will generate compiler errors_!. 
+3. With the notebook open, start at the very first cell reading "__Credit Risk Classification__" (a cell will be active when a rectangular border is surrounding the area in question). Run each cell in sequential order. _It is vital that all cells are ran in sequential order or your notebook will generate compiler errors_!. 
 
 ---
 
