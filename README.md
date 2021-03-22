@@ -1,6 +1,6 @@
 # Credit Risk Classification
 
-![San Francisco](./Images/San_Francisco.jpg)
+![San Francisco](./Images/credit.jpeg)
 
 ---
 
