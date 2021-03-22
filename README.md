@@ -42,6 +42,10 @@ import warnings
 
 ## Examples
 
+![Imbalanced](./Images/example_1.png)
+
+![Oversampled](./Images/example_2.png)
+
 ---
 
 ## Usage
