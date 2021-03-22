@@ -17,6 +17,8 @@ Before attempting to execute any _Python_ code in `credit_risk_resampling.ipynb`
 
 [sklearn](https://sklearn.org/) - Machine learning module.
 
+[imblearn](https://pypi.org/project/imblearn/) - Imbalanced machine learning module. 
+
 [warnings](https://docs.python.org/3/library/warnings.html) - System alerts. 
 
 ---
